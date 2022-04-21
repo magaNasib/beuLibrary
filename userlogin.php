@@ -38,7 +38,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['login']
       $_SESSION['userid'] = $user_id;
       $_SESSION['name'] = $name;
 
-      header("Location: dashboard.php");
+    echo("<script>window.location.href = 'dashboard.php';</script>");
     }
   } else
     $msg = "Email or password is incorrect!";
