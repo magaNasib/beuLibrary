@@ -34,7 +34,9 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['login']
     $msg = "";
     $_SESSION['adminid'] = $admin_id;
     $_SESSION['name'] = $name;
-    header("Location: admin/dashboard.php");
+    header("Location: .php");
+        echo("<script>window.location.href = 'admin/dashboard.php';</script>");
+
   } else
     $msg = "Email or password is incorrect!";
 }
