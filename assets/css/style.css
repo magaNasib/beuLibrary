@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fredoka", sans-serif;
+}
+.myContainer {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 0.2rem 1rem;
+}
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.logo img {
+  width: 10rem;
+  height: auto;
+}
+.height-100 {
+  height: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.col-direct {
+  flex-direction: column;
+}
+.center {
+  text-align: center;
+  justify-content: center;
+}
+header {
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 5;
+}
+nav ul {
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.menu-icon .bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 4px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -3px);
+}
+.header-div {
+  position: fixed;
+  top: 0;
+  background-color: white;
+
+  width: 100%;
+  padding: 0 1rem;
+}
+.relative {
+  position: relative;
+}
+.active-li {
+  background-color: #5bccf6;
+  color: #fff !important;
+}
+.space-btw {
+  justify-content: space-between;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  font-size: 1rem;
+  border-right: none;
+  outline: none;
+  border: none;
+}
+.search-container #filter {
+  background-color: #5bccf6;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0;
+  margin-right: -0.3rem;
+  width: 5rem;
+}
+.myNavbar {
+  box-shadow: none !important;
+}
+
+.myNavbar li {
+  padding: 0rem 1rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.search-div {
+  height: 100%;
+}
+.search-div input {
+  height: 100%;
+}
+.myNavbar li:hover {
+  background-color: #5bccf6;
+  color: #fff;
+}
+header .btns .signup {
+  background-color: #fff;
+  border: 1px solid #5bccf6;
+}
+.btns a {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+}
+.btns .signup {
+  background-color: #5bccf6;
+}
+
+/* --------------------- main------------- */
+
+.bg-pic {
+  background-image: url(../images/bg.jpg);
+  height: 100vh;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  position: relative;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0.5rem; /* Place the button at the bottom of the page */
+  right: 0.5rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.main {
+  padding-top: 5rem;
+  width: 100%;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+.center-main {
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+}
+.center-main h1 {
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 10px #5bccf6;
+}
+.main .btns {
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.main span a {
+  color: #5bccf6;
+  text-decoration: underline;
+}
+.line-center {
+  height: 5px;
+  width: 4rem;
+  background-color: #5bccf6;
+  margin: 2rem auto;
+  margin-bottom: 0;
+}
+.align-center {
+  text-align: center;
+}
+section h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+#benefit .benefits {
+  padding: 1rem 0;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#benefit .benefit-item .content {
+  padding: 1rem;
+}
+#benefit .benefit-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5bccf6;
+  border-radius: 0.7rem;
+
+  flex: 1;
+  overflow: hidden;
+}
+#benefit .benefit-item .left-img {
+  width: 40%;
+}
+#benefit .benefit-item img {
+  width: 100%;
+  height: auto;
+}
+section {
+  padding: 2rem 0;
+  background-color: #fcde67;
+}
+section.about {
+  height: 70vh;
+  justify-content: space-evenly;
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+}
+
+.about .left {
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.about .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .right {
+  width: 50%;
+  background-color: #5bccf6;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 1rem;
+}
+section.height-95 {
+  min-height: 95vh;
+}
+.bookshelf h3 {
+  padding: 1rem 0;
+}
+.bookshelf {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.gap {
+  height: 3.2rem;
+}
+.books-div {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.book-item button {
+  margin-top: 1rem;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  border: none;
+  transition: 0.5s;
+  background-color: #5bccf6;
+  border: 1px solid #5bccf6;
+}
+.book-item button:hover {
+  background-color: #fff;
+}
+
+/* -----------------login---------------- */
+.login-div {
+  width: 27rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+
+  margin: 0 auto;
+  color: #333;
+}
+.login-div form {
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.login-div input[type="text"],
+.login-div input[type="email"],
+.login-div input[type="password"] {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  border: none;
+  padding-left: 0.2rem;
+  border-bottom: 2px solid lightgray;
+}
+.login-div input[type="text"]:focus,
+.login-div input[type="email"]:focus,
+.login-div input[type="password"]:focus {
+  border: none;
+  border-bottom: 2px solid #fcde67;
+  outline: none;
+}
+.login-div input {
+  width: 100%;
+}
+.login-div input::placeholder {
+  font-size: 1.2rem;
+  color: black;
+}
+.login-div .chcbox {
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: #333;
+  width: 100%;
+  text-align: left;
+}
+#chcbox {
+  width: auto;
+}
+.login-div #submit {
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 0.2rem 2rem;
+  background-color: #5bccf6;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.login-div #submit:hover {
+  border: 1px solid #5bccf6;
+  background-color: #fff;
+  color: #5bccf6;
+}
+.login-div span {
+  font-size: 1rem;
+  display: block;
+  padding-top: 1rem;
+}
+.login-div span a {
+  color: #5bccf6 !important;
+}
+
+/* ------------------dashboard-------------- */
+
+.profile-pic {
+  border: 1px solid rgb(0, 214, 0);
+  width: 3rem;
+  border-radius: 50%;
+  height: 3rem;
+  padding: 1px;
+  overflow: hidden;
+  margin: 0.1rem 0;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.popup {
+  padding: 1rem;
+  position: absolute;
+  background-color: beige;
+  display: none;
+  top: 3rem;
+  right: 0rem;
+  transition: 1s;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #5bccf6;
+  width: 12rem;
+}
+.popup ul {
+  padding-left: 0;
+}
+.show {
+  display: block;
+}
+.popup #logout {
+  margin-top: 2rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0rem 0.8rem;
+}
+table.myBooks {
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #333;
+}
+table.myBooks td,
+table.myBooks th {
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: center;
+}
+table.myBooks .img {
+  width: 8rem;
+  height: auto;
+}
+table.myBooks img {
+  width: 100%;
+  height: 100%;
+}
+.btn-success {
+  color: #fff;
+  background-color: #00b74a;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  padding: 0.625rem 1.5rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.bg-yellow {
+  background-color: #fcde67;
+}
+#allBooks {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  overflow: scroll;
+}
+#allBooks th,
+#allBooks td {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.green {
+  color: rgb(14, 187, 14);
+}
+
+table#allBooks .img {
+  width: 30%;
+  height: auto;
+}
+table#allBooks img {
+  width: 100%;
+  height: 100%;
+}
+.head-books {
+  padding: 0.5rem 0;
+}
+.head-books h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+.pad-row {
+  padding: 1rem;
+}
+.mobile-padding {
+  margin-top: 50rem;
+}
+.myNavbar a:visited {
+  color: black;
+}

@@ -1,0 +1,72 @@
+@media screen and (max-width: 800px) {
+  .myNavbar {
+    display: none;
+  }
+  html {
+    font-size: 14px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #benefit .benefit-item {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .login-div {
+    width: 22rem;
+  }
+
+  table.myBooks .img {
+    width: 70%;
+    height: auto;
+  }
+  section.about {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  section .left,
+  section .right {
+    width: 100% !important;
+  }
+  section .right {
+    padding: 1rem 3rem !important;
+  }
+}
+@media screen and (max-width: 476px) {
+  html {
+    font-size: 11px;
+  }
+  .header-div {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  .myContainer {
+    width: 100%;
+  }
+  .btn-success {
+    font-size: 0.7rem !important;
+    padding: 0.2rem !important;
+  }
+  .logo img {
+    width: 3rem;
+  }
+  .benefits {
+    flex-direction: column;
+  }
+  #benefit .benefit-item {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .mobile-column.flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-column .left {
+    text-align: center;
+  }
+  table.myBooks .img {
+    width: 3rem;
+    height: auto;
+  }
+}
