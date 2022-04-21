@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
       if (mysqli_query($con, $reg_query)) {
         $msg = "Successfully registered";
         $color = "green";
-        header("Location: userlogin.php");
+    echo("<script>window.location.href = 'userlogin.php';</script>");
       } else
         $msg = "Could not register";
     }
